@@ -1,0 +1,104 @@
+/* #0C1027
+rgb(12,16,39) 
+5033B7
+A15ACC
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/* BODY */
+body{
+    background-color: #0C1027;
+    font-family: sans-serif;
+    color: white;
+}
+
+/* NAVIGATION */
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.5%;
+}
+.full-logo{
+    display: flex;
+    width: 20vw;
+    
+}
+/* logo color  */
+nav i{
+    color: #ebc634;
+}
+.logo{
+    position: relative;
+    height: 60px;
+    width: 60px;
+    margin-left: 2%;
+    background: radial-gradient( #5033B7,#A15ACC);
+    border-radius: 50px;
+}
+.ie{
+    position: absolute;
+    left: 23%;
+    top: 23%;
+    font-size: 2rem;
+}
+.im{
+    position: absolute;
+    font-size: 1.7rem;
+    left: 70%;
+    top: 55%;
+}
+.logo-name{
+    margin-top: 7%;
+    margin-left: 6%;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+}
+.fav{
+    font-size: 1.2rem;
+    margin-left: -15%;
+    padding-right: 5%;
+}
+.search{
+    border:3px solid #0C1027;
+    border-radius: 8px;
+    height: 6vh;
+    width: 20vw;
+    background-color: #18204d;
+    position: relative;
+}
+
+.isearch{
+    position: absolute;
+    top:5%;
+    margin-left: 0.5%;
+    z-index: 1;
+}
+.imic{
+    position: absolute;
+    z-index: 1;
+    top:5%;
+    margin-left: -2%;
+}
+input[type="search"]::placeholder{
+    padding-left: 12%; 
+}
+
+.ibell{
+    font-size: 1.5rem;
+    position: relative;
+}
+.idot{
+    font-size: 0.5rem;
+    position: absolute;
+    margin-left: -0.5%;
+    top:4%;
+    color: red;
+}
+.pic{
+    height: 3vw;
+    width: 3vw;
+    border-radius: 50%;
+}
