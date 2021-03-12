@@ -127,7 +127,7 @@ nav i{
   
   #slider {
     height: 20vw;
-    width: 70vw;
+    width: 60vw;
     margin-top: 2%;
     position: relative;
     perspective: 1000px;
@@ -197,43 +197,40 @@ nav i{
             }
                                     /* LATEST RELEASES */
 #latest-release{
-    width: 70vw;
+    width: 60vw;
 }
 .l-release{
-    width: 55vw;
+    margin-top: 1%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
-.new-rel{
-    margin-top: 2%;
-    width: 25vw;
-    display: flex;
-    vertical-align: top;
-    position: relative;
-    font-size: 0.9rem;
+.l-release>div{
+    padding: 0;
+    padding: 3%;
+    min-width: 25vw;
+   display: flex;
 }
 .new-rel img{
-    height: 6vw;
-    width: 6vw;
-    margin-right: 2%;
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
 }
-.options{
-    position: absolute;
-    right: 0%;
-    
+.title{
+    margin-left: 1%;
+    padding-right: 15%;
 }
+
 .options i{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
                                 /* POPULAR ARTISTS */
 #popular-artists{
-    width: 70vw;
+    width: 60vw;
     margin-top: 2%;
 }
 .artist img{
-    width: 8vw;
-    height: 8vw;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
 }
 .p-artists{
@@ -249,9 +246,8 @@ nav i{
 
                                     /* STATIONS */
 #stations{
-width: 70vw;
+width: 60vw;
 margin-top: 2%;
-/* height: 5vw; */
 display: flex;
 flex-wrap: wrap;
 background-color:#101642;
@@ -266,35 +262,13 @@ border: 5px solid #101642;
     flex-wrap: wrap;
 }
 
-.s-logo{
-   
-   position: relative;
-}
-.s-logo img{
-    height: 7vw;
-    width: 8vw;
-}
-.s-logo1{ 
-    position:absolute;
-    margin-top: -8%;
-    margin-left: 2.3%;
-    font-size: 0.8rem;
-}
-.sl{
-    position:absolute;
-    
-    margin-left: 4%;
-    font-size: 1.5rem;
-}
-
 .gen img{
-    width: 6vw;
-    height: 6vw;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     opacity: 0.5;
 }
 .gen{
-    /* margin-left: 2%; */
     margin-top: 2%;
     display: flex;
     width: 60vw;
@@ -312,6 +286,58 @@ position: relative;
     left: 50%;                    
     top: 50%;                         
     transform: translate(-50%, -50%); 
-    font-size: 0.8rem;
+    font-size: 1rem;
 
+}
+
+                                        /* MOODS */
+
+#moods{
+    margin-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60vw;
+    justify-content: space-between;
+}
+.mood{
+    position: relative;
+}
+.mood img{
+    height: 170px;
+    width: 250px;
+    opacity: 0.7;
+    border-radius: 5px;
+}
+.mood span{
+    font-weight: 700;
+    font-size: 2rem;
+    position: absolute;  
+    left: 50%;                    
+    top: 50%;                         
+    transform: translate(-50%, -50%); 
+    font-size: 1rem;
+}
+.mood img:hover{
+    transform: scale(1.1);
+}
+
+                                /* LATEST BY LANGUAGE */
+#latest-by-lan{
+    margin-top: 3%;
+}
+.horizontal-view{
+    display: flex;
+    width: 60vw;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.horizontal-view img{
+    height: 125px;
+    width: 125px;
+    border-radius: 5px;
+    margin: 2%;
+}
+
+.latest-hin{
+    margin-top: 2%;
 }
