@@ -308,7 +308,7 @@ color: white;
     margin-right: 3%;
     position: relative;
 }
-.overlay {
+.overlay-art {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -322,7 +322,7 @@ color: white;
     background-color: rgba(0,0,0,0.4);
   }
 
-.artist:hover .overlay {
+.artist:hover .overlay-art {
     opacity: 1;
   }
 
