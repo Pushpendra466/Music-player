@@ -65,11 +65,13 @@ body{
             /* justify-content: space-between; */
         }
         #moods img{
-            width: 300px;
+            width: 250px;
         }
         .latest-eng,.latest-hin{
             margin-left: 20%;
         }
+      
+
 }
 
                                 /* NAVIGATION */
@@ -690,7 +692,7 @@ position: relative;
     margin-left: 2%;
     display: flex;
     flex-wrap: wrap;
-    max-width: 95vw;
+    max-width: 96vw;
 }
 .artist-page{
     /* display: flex; */
@@ -725,6 +727,7 @@ position: relative;
     justify-content: space-between;
     align-items: center;
     background-color:#101642;
+    
 }
 .song-l img{
     height: 50px;
