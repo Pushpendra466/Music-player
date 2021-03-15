@@ -15,6 +15,62 @@ body{
     font-family: 'Raleway', sans-serif;
     color: white;
 }
+@media screen and (max-width:500px){
+
+    #latest-release{
+        width: 80vw;
+        margin-left: 20%;
+    }
+    .l-release{
+        margin-top: 1%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+       
+        width: 70vw;
+    }
+    .new-rel{
+        width: 100vw;
+    }
+    #popular-artists{
+        width: 80vw;
+        margin-left: 20%;
+        margin-top: 2%;
+    }
+    #slider {
+        height: 30vw;
+        width: 80vw;
+        margin-top: 2%;
+        margin-left: 20%;
+        position: relative;
+        perspective: 1000px;
+        transform-style: preserve-3d;
+    
+      }
+      #stations{
+        width: 60vw;
+        margin-top: 2%;
+        margin-left: 20%;
+        display: flex;
+        flex-wrap: wrap;
+        background-color:#101642;
+        border: 5px solid #101642;
+        }
+        #moods{
+            margin-top: 2%;
+            margin-left: 20%;
+            display: flex;
+            flex-wrap: wrap;
+            width: 60vw;
+            /* justify-content: space-between; */
+        }
+        #moods img{
+            width: 300px;
+        }
+        .latest-eng,.latest-hin{
+            margin-left: 20%;
+        }
+}
 
                                 /* NAVIGATION */
 
@@ -121,6 +177,73 @@ nav i{
     flex-wrap: wrap;
     max-width: 100vw;
 }
+#nav-sm{
+    display: none;
+}
+#menu-sm{
+    display: none;
+
+}
+@media screen and (max-width:700px){
+
+    nav{
+        display: none;
+    }
+    #nav-sm{
+        color: #ebc634;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        display: flex;
+        justify-content: space-between;
+        width: 95vw;
+    }
+    .full-logo{
+        display: flex;
+        width: 50vw;
+        margin-left: 3%;
+        
+    }
+    .pic{
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+    }
+    .idot{
+        font-size: 0.5rem;
+        position: absolute;
+        margin-left: -5px;
+        top:8px;
+        color: red;
+    }
+   
+    .nav-right{
+        display: flex;
+        width: 30vw;
+        justify-content: space-between;
+        font-size: 1.5rem;
+    }
+    #menu-sm:target{
+        z-index: 2;
+        width: 10vw;
+        display: block;
+        width: 100vw;
+        margin-bottom: 2%;
+    }
+    
+    .search-box{
+        position: relative;
+    }
+    .imic,.isearch{
+        position: absolute;
+        z-index: 1;
+        top:15px;
+        margin-left: -5%;
+    }
+    .isearch{
+        margin-left: 2%;
+
+    }
+}
 
                                 /* MAIN SECTION  */
 
@@ -140,6 +263,7 @@ nav i{
     position: relative;
     perspective: 1000px;
     transform-style: preserve-3d;
+
   }
   
   #slider label {
@@ -211,6 +335,7 @@ nav i{
     margin-top: 1%;
     display: flex;
     flex-wrap: wrap;
+    
 }
 .l-release>div{
     padding: 0;
@@ -275,7 +400,7 @@ nav i{
 color: white;
 }
 #song-opt:target{
-    top:1px;
+    /* top:1px; */
     display: block;
     position: absolute;
     height: 100px;
@@ -431,13 +556,14 @@ position: relative;
                                     /* PLAYLIST */
 
 #playlist{
-    margin-left: 2%;
+    margin-left: 20%;
     min-width: 30vw;
     position: fixed;
     right: 3vw;
     /* top: 9vh; */
     
 }
+
 .playlist-title{
     display: flex;
     justify-content: space-between;
@@ -474,6 +600,18 @@ position: relative;
 .left-song{
     display: flex;
     align-items: center;
+}
+@media screen and (max-width:550px){
+    #playlist{
+        position: relative;
+    }
+    .playlist-songs{
+        height: 75vh;
+        min-width: 70vw;
+        overflow-y: scroll;
+        
+    }
+    
 }
 
                                 /* PLAYER  */
@@ -552,7 +690,7 @@ position: relative;
     margin-left: 2%;
     display: flex;
     flex-wrap: wrap;
-    width: 95vw;
+    max-width: 95vw;
 }
 .artist-page{
     /* display: flex; */
@@ -614,11 +752,12 @@ position: relative;
     display: none;
 }
 #artist-details:target{
-    position: absolute;
+    position:relative;
     background-color: #0C1027;
     margin-top: 0;
     margin-left: 2%;
     display: flex;
     flex-wrap: wrap;
     width: 95vw;
+    
 } */
